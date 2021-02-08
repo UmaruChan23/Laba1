@@ -6,7 +6,7 @@ using namespace std;
 double x = 5;
 double result;
 
-double calculate();
+void calculate();
 
 int main() {
     cout << "x = " << x << endl;
@@ -19,7 +19,7 @@ int main() {
     return 0;
 }
 
-double calculate() {
+void calculate() {
     result = ((x + 2) / (sqrt(2 * x)) - (x / (sqrt(2 * x) + 2)) + (2 / (x - sqrt(2 * x)))) *
              (sqrt(x) - sqrt(2)) / (x + 2);
 }
